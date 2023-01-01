@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingpong Ball</title>
+    <style>
+        @keyframes pingpong {
+            0% {top: 450px;
+                left: 0;
+                border-color: brown;}
+            35%  {top: 0;}
+            50%  {top: 250px;}
+            65%  {top: 0;}
+            100% {top: 450px;
+                left: 550px;}
+        }
+        .stage{
+            background-color: cornflowerblue;
+            border: 3px solid black;
+            height: 500px;
+            width: 600px;
+        }
+        .ball{
+            background-color: brown;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            position: relative;
+            animation: pingpong 5s ease-in-out 2s infinite ;}
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"> </div>
+    </div><br>
+    <div class="stage2">
+        <div class="ball2"> </div>
+    </div>
+</body>
+</html>
